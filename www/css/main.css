@@ -40,7 +40,7 @@ p.byline {
 	background: url(../img/gift-guide-bg.jpg) no-repeat;
 	background-color: white;
 	background-size: cover;
-	height: 825px;
+	height: 800px;
 }
 
 #bg h1 {
@@ -107,7 +107,7 @@ h2 {
 	}
 
 	.title {
-		top: 95px;
+		top: 155px;
 	}
 
 	.title img {
@@ -115,7 +115,10 @@ h2 {
 	}
 
 	p {
-		margin: 0px 20px;
+		margin: 20px;
+		font-size: 17px;
+		line-height: 25px;
+
 	}
 
 	#content {
