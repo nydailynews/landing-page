@@ -19,10 +19,6 @@ body {
 	margin: 30px auto;
 }
 
-a {
-	text-decoration: none
-}
-
 p {
 	font: normal 20px 'PT Serif', serif;
     line-height: 30px;
@@ -86,6 +82,15 @@ p.byline {
 
 #content div.galleries ul li p {
     text-align: left;
+}
+
+#content div.galleries ul a {
+    color: black;
+    cursor: pointer;
+}
+
+#content div.galleries ul a:hover {
+	color: #8F1F25;
 }
 
 h2 {

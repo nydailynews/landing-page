@@ -42,7 +42,7 @@
 	function confettiParticle(color) {
 		this.x = Math.random() * W; // x-coordinate
 		this.y = (Math.random() * H) - H; //y-coordinate
-		this.r = RandomFromTo(2, 8); //radius;
+		this.r = RandomFromTo(5, 10); //radius;
 		this.d = (Math.random() * mp) + 10; //density;
 		this.color = color;
 		this.tilt = Math.floor(Math.random() * 10) - 10;
@@ -53,29 +53,12 @@
 			//ctx.lineWidth = this.r / 2;
 			ctx.moveTo(this.x + this.tilt + (this.r / 4), this.y);
 			ctx.beginPath();
+
 			// circles
 			ctx.arc(this.x, this.y + this.tilt + (this.r / 4), this.r, 0, 2 * Math.PI, false)
 			ctx.fillStyle = this.color;
 			return ctx.fill();
-		}
-		
-		this.drawEllipse = function(x, y, w, h) {
-		var kappa = .55555555,
-			ox = (w / 2) * kappa, // control point offset horizontal
-			oy = (h / 2) * kappa, // control point offset vertical
-			xe = x + w,           // x-end
-			ye = y + h,           // y-end
-			xm = x + w / 2,       // x-middle
-			ym = y + h / 2;       // y-middle
-
-		ctx.beginPath();
-		ctx.moveTo(x, ym);
-		ctx.bezierCurveTo(x, ym - oy, xm - ox, y, xm, y);
-		ctx.bezierCurveTo(xm + ox, y, xe, ym - oy, xe, ym);
-		ctx.bezierCurveTo(xe, ym + oy, xm + ox, ye, xm, ye);
-		ctx.bezierCurveTo(xm - ox, ye, x, ym + oy, x, ym);
-		}
-		
+		}		
 	}
 
 	function SetGlobals() {
