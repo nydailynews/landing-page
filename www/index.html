@@ -235,7 +235,7 @@
 	$('main').append('<canvas id="confetti" style="z-index:1;position:fixed; top: 0; left: 0; width: 100%; height: 100%;"></canvas">');
 		var s = document.createElement('script');
 		s.setAttribute('src', 'js/snow.js');
-		s.setAttribute('onload', "window.setTimeout('DeactivateConfetti(); ', 1000)");
+		s.setAttribute('onload', "window.setTimeout('DeactivateConfetti(); ', 1500)");
 		document.getElementsByTagName('head')[0].appendChild(s);
 		window.setTimeout('$(\"#confetti\").remove();', 8000);
 </script>
