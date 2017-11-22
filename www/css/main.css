@@ -26,10 +26,11 @@ p {
 }
 
 p.byline {
-	font: normal 14px "Open Sans", sans-serif;
-	width: 90%;
-	margin: auto;
-	text-align: center;
+	font: normal 13px "Open Sans", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #333;
+    margin-bottom: 5px;
 }
 
 #bg{
@@ -102,6 +103,7 @@ h2 {
 .social {
 	text-align: center;
 	margin: 25px auto;
+	margin-left: 20px;
 }
 
 
