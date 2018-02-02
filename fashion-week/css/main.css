@@ -40,11 +40,15 @@ p.byline {
 	display: none;
 }
 
-h2 {
+article h2 {
 	text-align: center;
     font: normal 35px 'Cormorant Garamond', serif;
     margin-bottom: 30px;
     text-transform: uppercase;
+}
+
+video {
+	width: 100%;
 }
 
 .social {
@@ -87,13 +91,17 @@ h2 {
     text-align: left;
 }
 
+#content div.galleries ul li img {
+    border: 1px solid #999;
+}
+
 #content div.galleries ul a {
     color: black;
     cursor: pointer;
 }
 
 #content div.galleries ul a:hover {
-	color: #48BFEF;
+	color: #999;
 }
 
 @media only screen and (min-width: 250px) and (max-width: 727px) {

@@ -16,9 +16,9 @@
     <meta name="twitter:title" content='New York Fashion Week Fall Winter 2018' />
 
     <!-- Descriptions -->
-    <meta name="description" content="DESC" />
-    <meta property="og:description" content="DESC" />
-    <meta name="twitter:description" content="DESC" />
+    <meta name="description" content="From the runways to the after-parties, we're got New York Fashion Week covered." />
+    <meta property="og:description" content="From the runways to the after-parties, we're got New York Fashion Week covered." />
+    <meta name="twitter:description" content="From the runways to the after-parties, we're got New York Fashion Week covered." />
 
     <!-- KEYWORD -->
     <meta name="keywords" content="New York Fashion Week, NYFW, New York Fashion Week Fall Winter 2018, Fashion Week, 2018, galleries" />
@@ -139,9 +139,14 @@
 <!-- CONTENT-START -->
 <main>
 	<article>
-		<section id="intro">
+		<section id="intro-box">
 			<h1>NY Daily News coverage of New York Fashion Week Fall Winter 2018</h1>
-			
+			<div id="video-container">
+                <video autoplay poster id="video-header">
+                    <source src="img/fashion-week.mp4" type="video/webm">
+                    <source src="img/fashion-week.mp4" type="video/mp4">
+                </video>      
+            </div>
 		</section>
 
 		<div class="ad center">
@@ -160,39 +165,39 @@
 			</div>
 
 			<div class="galleries">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<p>They say it’s the city that never sleeps and nothing encapsulates this better than New York Fashion Week. From the runways to the after-parties, check out our around-the-clock coverage of NYFW Fall/Winter 2018.</p>
 				<ul>
 					<a href="#" target="_blank">
 					<li>
-						<img src="http://via.placeholder.com/300x300" alt="">
+						<img src="img/backstage.jpg" alt="a picture of a pile of makeup and brushes backstage at a fashion show">
 						<h2>backstage</h2>
 					</li>
 					</a>
 					
 					<a href="#" target="_blank">
 					<li>
-						<img src="http://via.placeholder.com/300x300" alt="">
+						<img src="img/runway.jpg" alt="a picture of a model on a runway in a bright yellow gown">
 						<h2>the runways</h2>
 					</li>
 					</a>
 
 					<a href="#" target="_blank">
 					<li>
-						<img src="http://via.placeholder.com/300x300" alt="">
+						<img src="img/front-row.jpg" alt="a photo of Anna Wintour and Maria Sharapova during a runway show at New York Fashion Week in 2016">
 						<h2>the front row</h2>
 					</li>
 					</a>
 
 					<a href="#" target="_blank">
 					<li>
-						<img src="http://via.placeholder.com/300x300" alt="">
+						<img src="img/street-style.jpg" alt="a closeup photo of a colorful woven handbag">
 						<h2>street style</h2>
 					</li>
 					</a>
 
 					<a href="#" target="_blank">
 					<li>
-						<img src="http://via.placeholder.com/300x300" alt="">
+						<img src="img/social-media.jpg" alt="a photo of someone taking a cellphone picture of a model on a fashion show runway">
 						<h2>social media</h2>
 					</li>
 					</a>
@@ -221,13 +226,5 @@
 	</div>
 </div>
 
-<script>
-	$('main').append('<canvas id="confetti" style="z-index:1;position:fixed; top: 0; left: 0; width: 100%; height: 100%;"></canvas">');
-		var s = document.createElement('script');
-		s.setAttribute('src', 'js/snow.js');
-		s.setAttribute('onload', "window.setTimeout('DeactivateConfetti(); ', 1500)");
-		document.getElementsByTagName('head')[0].appendChild(s);
-		window.setTimeout('$(\"#confetti\").remove();', 8000);
-</script>
 </body>
 </html>
